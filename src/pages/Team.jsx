@@ -12,7 +12,7 @@ const Team = () => {
           {}
           {[...Array(9)].map((_, index) => (
             <Box key={index} boxShadow="md" rounded="lg" overflow="hidden">
-              <Image src={`https://i.pravatar.cc/300?img=${index}`} alt={`Team Member ${index + 1}`} />
+              <Image src={index === 2 ? "https://i.pravatar.cc/300?u=a042581f4e29026024d" : `https://i.pravatar.cc/300?img=${index}`} alt={`Team Member ${index + 1}`} />
             </Box>
           ))}
         </SimpleGrid>
